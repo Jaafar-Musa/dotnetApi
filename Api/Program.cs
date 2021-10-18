@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Api
 {
+    //entry point of the application
     public class Program
     {
         public static void Main(string[] args)
@@ -17,6 +18,7 @@ namespace Api
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //Host config
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
